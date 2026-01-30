@@ -1,0 +1,26 @@
+<?php while (have_posts()) : the_post() ?>
+
+  <?php the_title('<h1 class="text-center text-primary">', '</h1>'); ?>
+
+  <?php
+  /** Si quiero agregar una clase a la imagen destacada, uso:
+      2 parametros el primero es el tamaño de la imagen
+      y el segundo un array con los atributos que quiero agregar
+      en este caso el atributo a utilizar es class. por ahora no vamos 
+      a usar este ejemplo, pero queda aca como referencia*/
+  if (has_post_thumbnail()) :
+    the_post_thumbnail('full', ['class' => 'imagen-destacada']);
+
+    $hora_inicio = get_field('hora_inicio');
+    $hora_fin = get_field('hora_fin');
+  ?>
+
+    <p class="informacion-clase">
+      <?php the_field('dias_clase'); ?> -
+      <?php esc_html_e($hora_inicio) ?> a
+      <?php esc_html_e($hora_fin); ?>
+    </p>
+
+    <?php the_content(); ?>
+  <?php endif; ?>
+<?php endwhile; ?>

@@ -1,0 +1,15 @@
+# Dependencias Node
+
+node_modules/
+/dist
+
+# Build files
+dist/
+.vite/
+
+# Environment files
+/.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

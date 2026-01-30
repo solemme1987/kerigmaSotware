@@ -1,0 +1,55 @@
+/*
+* Our SCSS entrypoint
+* Uses ITCSS architecture, with the exception of the 'elements' folder because
+* this repo prefers classes to elements and uses a fairly comprehensive reset,
+* and the addition of a vendors folder in case we need to include node_modules
+* ITCSS Introduction:
+* https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+*/
+
+/*
+* Vendors:
+* Vendor external stylesheets
+*/
+@use 'vendor/module' as *;
+
+/*
+* Settings:
+* Used with preprocessors and contain font, colors definitions, etc.
+*/
+@use 'settings/module' as *;
+
+/*
+* Tools:
+* Globally used mixins and functions. It’s important not to output any CSS in
+* the first 2 layers.
+*/
+@use 'tools/module' as *;
+
+/*
+* Generic:
+* reset and/or normalize styles, box-sizing definition, etc. This is the first
+* layer which generates actual CSS.
+*/
+@use 'generic/module' as *;
+
+/*
+* Objects:
+* Class-based selectors which define undecorated design patterns, for example
+* media object known from OOCSS
+*/
+@use 'objects/module' as *;
+
+/*
+* Components:
+* specific UI components. This is where majority of our work takes place and
+* our UI components are often composed of Objects and Components
+*/
+@use 'components/module' as *;
+
+/*
+* Utilities:
+* Utilities and helper classes with ability to override anything which goes
+* before in the triangle, eg. hide helper class
+*/
+@use 'utilities/module' as *;

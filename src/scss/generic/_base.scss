@@ -1,0 +1,42 @@
+/*
+* Additional KERIGMA preferences
+*/
+
+// * {
+  // @extend %focus-indicator;
+// }
+
+html {
+  // A font-size of 62.5% will create a base font-size of 10px in most cases
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  // font-family: $proxima-nova;
+  font-size: 1.6rem;
+  // color: color(grey-dk-80);
+}
+
+// 1. Fluid images for responsive purposes.
+// 2. Offset `alt` text from surrounding copy.
+// 3. Setting `vertical-align` removes the whitespace that appears under `img`
+//    elements when they are dropped into a page as-is. Safer alternative to
+//    using `display: block;`.
+img {
+  max-width: 100%; // [1]
+  font-style: italic; // [2]
+  vertical-align: middle; // [3]
+}
+
+// The hidden attribute is a HTML5 native means to hide content to all users.
+// It is essentially the same as using CSS to declare an element as display: none;.
+// Declaring [hidden] { display: none; }, even legacy browsers which don’t support
+// the hidden attribute by default will still hide content in the same manner.
+[hidden] { display: none !important; }
+
+abbr { text-decoration: none; }
+
+h1{
+  color: red;
+}

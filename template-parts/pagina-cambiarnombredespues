@@ -1,0 +1,18 @@
+<?php
+while (have_posts()) : the_post();
+
+  the_title('<h1 class="text-center text-primary">', '</h1>');
+
+  // the_post_thumbnail();
+  /** Si quiero agregar una clase a la imagen destacada, uso:
+      2 parametros el primero es el tamaño de la imagen
+      y el segundo un array con los atributos que quiero agregar
+      en este caso el atributo a utilizar es class. por ahora no vamos 
+      a usar este ejemplo, pero queda aca como referencia*/
+  if (has_post_thumbnail()) {
+    the_post_thumbnail('full', ['class' => 'imagen-destacada']);
+  }
+
+  the_content();
+
+endwhile;
