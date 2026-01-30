@@ -1,3 +1,6 @@
+@use '../settings/module' as *;
+
+
 /*
 * Additional KERIGMA preferences
 */
@@ -6,14 +9,22 @@
   // @extend %focus-indicator;
 // }
 
+
 html {
   // A font-size of 62.5% will create a base font-size of 10px in most cases
   font-size: 62.5%;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
+*, *::before, *::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  // font-family: $proxima-nova;
+  font-family: $font-inter;
   font-size: 1.6rem;
   // color: color(grey-dk-80);
 }
@@ -37,6 +48,21 @@ img {
 
 abbr { text-decoration: none; }
 
-h1{
+h1,h2,h3,h4,h5,h6 {
   color: red;
+  // font-family: $font-montserrat;
+  font-size: inherit; 
+  font-weight: inherit;
+  line-height: inherit;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol{
+  list-style: none;
 }
