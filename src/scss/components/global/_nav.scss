@@ -9,6 +9,10 @@
   height:8rem;
   margin: 0 auto;
 
+  @media (min-width: 768px) {
+    padding: 0 2.4rem;
+  }
+
   @media (min-width: 992px) {
     padding: 0 3.2rem;
   }
@@ -31,7 +35,7 @@
     font-weight: 300;
   }
 
-  &__logo{
+  &__icon{
     font-family: $font-montserrat;
     font-size: 2.4rem;
     font-weight: 700;

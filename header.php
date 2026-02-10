@@ -58,11 +58,11 @@
 
   <header class="c-header js-header">
     <nav class="c-nav" role="navigation" aria-label="Main Navigation">
-      <div class="c-nav__brand-container">
-        <a href="<?php echo home_url(); ?>" class="c-nav__brand">
-          <span class="c-nav__logo">k</span>
-          <span class="c-nav__text">
-            Kerigma<span class="c-nav__text-light">Software</span>
+      <div class="c-logo__brand-container">
+        <a href="<?php echo home_url(); ?>" class="c-logo__brand">
+          <span class="c-logo__icon">k</span>
+          <span class="c-logo__text">
+            Kerigma<span class="c-logo__text-light">Software</span>
           </span>
         </a>
       </div>
