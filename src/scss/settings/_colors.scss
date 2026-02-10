@@ -1,0 +1,39 @@
+/*
+* Colors
+* Define colors in the $color map, and grab them using the function
+* i.e. background-color: color(yellow);
+*/
+
+/*
+//* Text Color Warnings
+
+//* Blue - Lighter 60% and Blue Lighter - 80% should not be used as BG for white text, or as text on white BGs
+
+//* Blue - Lighter 40% can only be used for text on white (or reversed) at 20px and bold or larger, or 24px or larger. */
+
+@use "sass:map";
+
+
+$colors: (
+  "primary": #5B36AC, // Main Purple from logo
+  "secondary": #FFA000, // Orange accent inferred from text/icons
+  "primary-dark": #452784,
+  "accent-purple-light": #F3EFFF,
+  "background-light": #F9FAFB,
+  "dark": #111827,
+  "surface-light": #FFFFFF,
+  "surface-dark": #1F2937,
+  "text-light": #374151,
+  "text-dark": #E5E7EB,
+  "text-primary": #4B5563,
+  "full-white": #FFFFFF,
+  "full-black": #000000,
+);
+
+@function color($key) {
+  @if map.has-key($colors, $key) {
+    @return map.get($colors, $key);
+  }
+
+  @warn 'That color is not defined: \'#{$key}\'';
+}

@@ -75,6 +75,7 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     cors: true,
-    origin: 'http://kerigma.test'
-  }
+    origin: 'http://kerigma.test',
+  },
+
 })

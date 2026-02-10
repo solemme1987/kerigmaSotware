@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Servicios y Soluciones - Kerigma Software</title>
-
+  <!-- <title>Servicios y Soluciones - Kerigma Software</title> -->
+  <title><?php echo wp_get_document_title(); ?></title>
 
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -25,21 +25,73 @@
 
 </head>
 
-<body class="">
-  <h1>HOLA MUNDO ESTO ES UNA GRAN PRUEBA</h1>
+<!-- 
+    <nav class="c-nav">
+      <button class="c-btn c-btn--small ">
+        contactar
+      </button>
+      <br>
+      <br>
 
-  <ul role="list">
-    <li>item 1</li>
-    <li>item 2</li>
-    <li>item 3</li>
-    <li>item 4</li>
-    <li>item 5</li>
-  </ul>
+      <button class="c-btn c-btn--light">
+        agendar llamada
+      </button>
+      <br>
+      <br>
 
-  <ol>
-    <li>item 1</li>
-    <li>item 2</li>
-    <li>item 3</li>
-    <li>item 4</li>
-    <li>item 5</li>
-  </ol>
+      <button class="c-btn c-btn--small-primary ">
+        contactar
+      </button>
+      <br>
+      <br>
+      <button class="c-btn c-btn--primary">
+        Explorar soluciones
+        <span class="material-icons-round c-btn__icon">arrow_downward</span>
+      </button>
+      <br>
+      <br>
+    </nav>
+
+-->
+
+<body id="<?php echo $pagename; ?>" <?php body_class(); ?>>
+
+  <header class="c-header js-header">
+    <nav class="c-nav" role="navigation" aria-label="Main Navigation">
+      <div class="c-nav__brand-container">
+        <a href="<?php echo home_url(); ?>" class="c-nav__brand">
+          <span class="c-nav__logo">k</span>
+          <span class="c-nav__text">
+            Kerigma<span class="c-nav__text-light">Software</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="c-nav__list-container js-menu-container">
+        <ul class="c-nav__list">
+          <li class="c-nav__item">
+            <a href="<?php echo home_url(); ?>" class="c-nav__link ">inicio</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link active">servicios</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">expertise</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">casos de éxito</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-btn c-btn--small-primary">contactar</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <button class="c-nav__menu-btn js-menu-toggle" aria-label="Menu Button">
+        <span class="material-icons-round text-3xl">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">

@@ -57,7 +57,7 @@ add_action('wp_enqueue_scripts', function () {
 // require 'inc/api/index.php';
 
 /** Assemble template function */
-// require 'inc/assemble.php';
+require 'inc/assemble.php';
 
 /** Custom Functions */
 // require 'inc/custom.php';

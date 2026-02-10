@@ -1,4 +1,4 @@
-@use '../settings/module' as *;
+@use '../abstracts/globals' as *;
 
 
 /*
@@ -26,7 +26,12 @@ html {
 body {
   font-family: $font-inter;
   font-size: 1.6rem;
-  // color: color(grey-dk-80);
+  color: color(text-primary);
+  background-color: rgb(233 213 255 / 0.3);
+}
+
+body.is-menu-open {
+  overflow: hidden;
 }
 
 // 1. Fluid images for responsive purposes.
@@ -49,9 +54,8 @@ img {
 abbr { text-decoration: none; }
 
 h1,h2,h3,h4,h5,h6 {
-  color: red;
-  // font-family: $font-montserrat;
-  font-size: inherit; 
+  color: color(dark);
+  font-family: $font-montserrat;
   font-weight: inherit;
   line-height: inherit;
 
@@ -60,6 +64,13 @@ h1,h2,h3,h4,h5,h6 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 ul,

@@ -1,1 +1,4 @@
-// @import '';
+@forward 'global/header';
+@forward 'global/footer';
+@forward 'global/nav';
+@forward 'btn';

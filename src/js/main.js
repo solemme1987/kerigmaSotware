@@ -1,3 +1,5 @@
 import '../scss/style.scss'
+import { mobileMenuToggle } from './components/mobileMenuToggle';
 
-console.log('Vite + Sass funcionando 🚀')
+
+mobileMenuToggle();
