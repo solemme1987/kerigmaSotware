@@ -27,7 +27,7 @@ body {
   font-family: $font-inter;
   font-size: 1.6rem;
   color: color(text-primary);
-  background-color: rgb(233 213 255 / 0.3);
+  background-color: color(surface-light);
 }
 
 body.is-menu-open {

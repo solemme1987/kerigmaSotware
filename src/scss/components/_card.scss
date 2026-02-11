@@ -1,0 +1,43 @@
+@use '../abstracts/globals' as *;
+
+.c-card{
+  display: flex;
+
+  &__title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: color(dark);
+    text-transform: capitalize;
+  }
+
+  &__text{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+    &--sm{
+      font-size: 1.2rem;
+    }
+
+    &--md{
+      font-size: 1.4rem;
+    }
+  }
+
+  &--sm-icon{
+    background-color: color(surface-light);
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    border-radius:1.6rem;
+  }
+
+  &__box-icon{
+   &--sm {
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+   }
+  }
+
+
+}

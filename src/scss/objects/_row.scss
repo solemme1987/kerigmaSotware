@@ -1,0 +1,15 @@
+.o-row {
+  width: 100%;
+  max-width: 128rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  
+
+  @media (min-width: 768px) {
+    padding: 0 2.4rem;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 3.2rem;
+  }
+}

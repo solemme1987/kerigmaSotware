@@ -1,7 +1,7 @@
 </main>
-<footer class="c-footer">
+<footer class="c-footer o-container o-container--footer">
 
-  <div class="c-footer__menu-wrapper">
+  <div class="c-footer__menu-wrapper o-row">
 
     <nav class="c-footer__nav" role="navigation" aria-label="Footer Navigation">
       <ul class="c-footer__columns-wrapper ">

@@ -1,26 +1,8 @@
 @use '../../abstracts/globals' as *;
 
 .c-footer{
-  background-color: color('surface-light');
-  padding: 6.4rem 0 3.2rem 0;
-  width: 100%;
  
-  &__menu-wrapper{
-   
-    width: 100%;
-    max-width: 128rem;
-    padding: 0 1.6rem;
-    margin: 0 auto;
-    
-
-    @media (min-width: 768px) {
-      padding: 0 2.4rem;
-    }
-
-    @media (min-width: 992px) {
-      padding: 0 3.2rem;
-    }
-  }
+  background-color: color('surface-light');
   
   &__nav{
     border-bottom: 0.1rem solid rgba(color(text-dark), 0.5);

@@ -56,8 +56,8 @@
 
 <body id="<?php echo $pagename; ?>" <?php body_class(); ?>>
 
-  <header class="c-header js-header">
-    <nav class="c-nav" role="navigation" aria-label="Main Navigation">
+  <header class="c-header o-container js-header">
+    <nav class="c-nav o-row" role="navigation" aria-label="Main Navigation">
       <div class="c-logo__brand-container">
         <a href="<?php echo home_url(); ?>" class="c-logo__brand">
           <span class="c-logo__icon">k</span>
