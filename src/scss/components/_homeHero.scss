@@ -1,7 +1,6 @@
 @use '../abstracts/globals' as *;
 
 .c-homeHero{
-  padding: 16rem 0 11.2rem;
   background-color: color(background-light);
 
   &__container{
@@ -18,7 +17,10 @@
   }
 
   &__text-container{
-    padding:  4.8rem 0;
+    padding-bottom: 4.8rem;
+     @media (min-width: 1024px) {
+       padding: 0;
+     }
   }
 
   &__pill{
@@ -76,6 +78,8 @@
     &>img{
       width: 100%;
       height: 100%;
+      min-width: 100%;
+      min-height: 100%;
       border-radius: 2.4rem;
       border: 0.4rem solid white;
       object-fit: cover;
@@ -89,8 +93,9 @@
     top: 0;
     right: 0;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    transform: translateY(-40%);
+    // transform: translateY(-40%);
     animation: float 3s ease-in-out infinite;
+    min-width: 21.2rem;
     
     @media (min-width: 768px) {
       animation: bounce 3s infinite;
@@ -102,7 +107,7 @@
       bottom: 0;
       left: 0;
       animation: floatBottom 2s ease-in-out infinite;
-      transform: translateY(40%);
+      // transform: translateY(40%);
       @media (min-width: 768px) {
         animation: bounceBottom 4s infinite;
       }
