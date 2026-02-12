@@ -31,7 +31,8 @@ $colors: (
   "full-white": #FFFFFF,
   "full-black": #000000,
   "green-dark": #16A34A,
-  "green-light": #DCFCE7
+  "green-light": #DCFCE7,
+  "blue-surface": #2563EB,
 );
 
 @function color($key) {

@@ -1,7 +1,40 @@
 @use '../abstracts/globals' as *;
 
 .c-card{
+  position: relative;
   display: flex;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+
+  &--sm-icon {
+    position: absolute;
+    background-color: color(surface-light);
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    border-radius:1.6rem;
+  }
+
+  &--service{
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+
+    &>.c-card__text{
+      margin-bottom: 2.4rem;
+    }
+    &>.c-card__title{
+      margin-bottom: 1.6rem;
+      margin-top: 2.4rem;
+    }
+   
+    @media (min-width: 1024px) {
+      max-width: 38.4rem;
+    }
+
+  }
 
   &__title{
     font-size: 1.8rem;
@@ -9,11 +42,20 @@
     line-height: 2.8rem;
     color: color(dark);
     text-transform: capitalize;
+
+    &--md{
+     font-size: 2rem;
+    }
+
+    &--lg{
+      font-size: 2.4rem;
+    }
   }
 
   &__text{
     font-size: 1.6rem;
-    text-transform: capitalize;
+    // text-transform: capitalize;
+    line-height: 1.6;
 
     &--sm{
       font-size: 1.2rem;
@@ -24,19 +66,120 @@
     }
   }
 
-  &--sm-icon{
-    background-color: color(surface-light);
-    align-items: center;
-    gap: 1.6rem;
-    padding: 1.6rem;
-    border-radius:1.6rem;
+  &__box-icon {
+    &--sm {
+      padding: 0.8rem;
+      border-radius: 0.9rem;
+    }
+    
+    &--lg{
+      width: 6.4rem;
+      height: 6.4rem;
+      background-color: color(surface-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2.4rem;
+      box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+      transition: 0.2s ease-in-out;
+      &>span {
+        font-size: 3rem;
+      }
+    }
+
+  }
+  
+  &__list{
+    margin-bottom: 3.2rem;
   }
 
-  &__box-icon{
-   &--sm {
-    padding: 0.8rem;
-    border-radius: 0.9rem;
-   }
+  &__list-icon{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-right: 0.8rem;
+  }
+
+  &__list-item{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__cta{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: color(primary);
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+
+    &>span{
+      margin-left: 0.4rem;
+      font-size: 1.4rem;
+      font-weight: 0;
+    }
+
+    &:hover, &:focus{
+      color: color(secondary);
+    } 
+  }
+
+  &__background-circle{
+    width: 12.8rem;
+    height: 12.8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+    transition: 0.2s ease-in-out;
+    opacity: 0.2;
+  }
+
+  &:hover{
+    box-shadow: 0 2.5rem 5.0rem -1.2rem rgba(0, 0, 0, 0.25);
+    background-color: #F9FAFB;
+    transform: translateY(-3%);
+  
+    .c-card__background-circle{
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+  
+  // TODO: THIS TRASNSITION NEED TOBE REFACTOR WITH A @EACH */
+
+  &.is-purple:hover {
+    .c-card__box-icon--lg {
+      background-color: color(primary);
+      &>span{
+        color: color(surface-light);
+      }
+    }
+  }
+
+  &.is-orange:hover {
+    .c-card__box-icon--lg {
+      background-color: color(secondary);
+      &>span{
+        color: color(surface-light);
+      }
+    }
+  }
+  
+  &.is-blue:hover {
+    .c-card__box-icon--lg {
+      background-color: color(blue-surface);
+      &>span{
+        color: color(surface-light);
+      }
+    }
   }
 
 

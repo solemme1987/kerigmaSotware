@@ -34,7 +34,7 @@
           <span class="material-icons-round ">groups</span>
         </div>
         <div class="c-card__body">
-          <p class="c-card__text c-card__text--sm">expertos IT</p>
+          <p class="c-card__text c-card__text--sm">Expertos IT</p>
           <h2 class="c-card__title">senior staff</h2>
         </div>
       </div>
@@ -44,7 +44,7 @@
           <span class="material-icons-round">code</span>
         </div>
         <div class="c-card__body">
-          <p class="c-card__text c-card__text--sm">proyectos entregados</p>
+          <p class="c-card__text c-card__text--sm">Proyectos Entregados</p>
           <h2 class="c-card__title">150+</h2>
         </div>
       </div>

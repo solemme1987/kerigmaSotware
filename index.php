@@ -16,9 +16,12 @@
   <?php
   // Home hero component
   get_template_part('src/pages/components/homeHero');
+
+  // Services component
+  get_template_part('src/pages/components/services')
   ?>
 
-
+  <!--
   <h2>Aqui estamos probando que todo marchi bien item 1 Aqui estamos probando que todo marchi bien item 1</h2>
   <h2>Aqui estamos probando que todo marchi bien item 2 Aqui estamos probando que todo marchi bien item 1</h2>
   <h2>Aqui estamos probando que todo marchi bien item 3 Aqui estamos probando que todo marchi bien item 1</h2>
@@ -68,6 +71,6 @@
   <h2>Aqui estamos probando que todo marchi bien item 4 Aqui estamos probando que todo marchi bien item 17</h2>
   <h2>Aqui estamos probando que todo marchi bien item 4 Aqui estamos probando que todo marchi bien item 18</h2>
   <h2>Aqui estamos probando que todo marchi bien item 4 Aqui estamos probando que todo marchi bien item 19</h2>
-  <h2>Aqui estamos probando que todo marchi bien item 5 Aqui estamos probando que todo marchi bien item 10</h2>
+  <h2>Aqui estamos probando que todo marchi bien item 5 Aqui estamos probando que todo marchi bien item 10</h2>-->
 </main>
 <?php get_footer(); ?>
