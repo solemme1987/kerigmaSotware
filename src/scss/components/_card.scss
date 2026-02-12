@@ -36,6 +36,31 @@
 
   }
 
+  &--skill{
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    &:hover{
+      outline: 0.1rem solid color(primary)
+    }
+
+    &>h2{
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+    &>p{
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: color(soft-gray);
+    }
+  }
+
   &__title{
     font-size: 1.8rem;
     font-weight: 700;
@@ -142,7 +167,7 @@
     opacity: 0.2;
   }
 
-  &:hover{
+  &--service:hover{
     box-shadow: 0 2.5rem 5.0rem -1.2rem rgba(0, 0, 0, 0.25);
     background-color: #F9FAFB;
     transform: translateY(-3%);
@@ -181,6 +206,5 @@
       }
     }
   }
-
 
 }

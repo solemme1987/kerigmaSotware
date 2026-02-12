@@ -16,9 +16,12 @@
 
 $colors: (
   "primary": #5B36AC, // Main Purple from logo
-  "secondary": #FFA000, // Orange accent inferred from text/icons
   "primary-dark": #452784,
+  "primary-md":#9333EA,
   "accent-purple-light": #F3EFFF,
+  "secondary": #FFA000, // Orange accent inferred from text/icons
+  "secondary-md": #EAB308,
+  "secondary-dark": #EA580C,
   "background-light": #F9FAFB,
   "dark": #111827,
   "surface-light": #FFFFFF,
@@ -31,8 +34,13 @@ $colors: (
   "full-white": #FFFFFF,
   "full-black": #000000,
   "green-dark": #16A34A,
+  "green-md":#22C55E,
   "green-light": #DCFCE7,
   "blue-surface": #2563EB,
+  "blue-light": #60A5FA,
+  "blue-dark": #1E40AF,
+  "blue-md":#3B82F6,
+  "blue-green": #0891B2,
 );
 
 @function color($key) {

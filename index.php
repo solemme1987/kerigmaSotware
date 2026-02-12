@@ -22,6 +22,9 @@
 
   // Split content plus component
   get_template_part('src/pages/components/splitContentPlus');
+
+  // Skills component
+  get_template_part('src/pages/components/skills');
   ?>
 
 
