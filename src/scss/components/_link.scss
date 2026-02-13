@@ -1,0 +1,38 @@
+@use '../abstracts/globals' as *;
+
+.c-link {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s ease-in-out;
+
+  &--orange{
+    background-color: color(secondary);
+    color: color(surface-light);
+    border-radius: 99.99rem;
+    padding: 2rem  4rem;
+    box-shadow: 
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    
+    &:hover, 
+    &:focus{
+      transform: translateY(-0.5rem);
+      background-color: color(secondary-md);
+    }
+  }
+  
+  &--light{
+    color: color(surface-light);;
+    border: 2px solid color(surface-light);
+    border-radius: 99.99rem;
+    padding: 2rem  4rem;
+    &:hover, 
+    &:focus{
+      color: color(primary);
+      background-color: color(surface-light);
+    }
+  }
+
+}

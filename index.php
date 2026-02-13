@@ -25,6 +25,12 @@
 
   // Skills component
   get_template_part('src/pages/components/skills');
+
+  // Featured component
+  get_template_part('src/pages/components/featured');
+
+  // Featured component
+  get_template_part('src/pages/components/footerCta');
   ?>
 
 
