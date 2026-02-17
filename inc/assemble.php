@@ -6,14 +6,14 @@
 |--------------------------------------------------------------------
 */
 
-// $base           = "dist"; // change to "src" if you want to enqueue files from '/src' directory
-// $theme_dir      = get_template_directory() . "/" . $base;
-// $theme_dir_uri  = get_template_directory_uri() . "/" . $base;
+$base           = "src"; // change to "src" if you want to enqueue files from '/src' directory
+$theme_dir      = get_template_directory() . "/" . $base;
+$theme_dir_uri  = get_template_directory_uri() . "/" . $base;
 
 function assemble_template($pagename)
 {
-  //   global $theme_dir;
-  //   global $theme_dir_uri;
+  global $theme_dir;
+  global $theme_dir_uri;
 
   //   if (function_exists('register_page_script')) {
   //     register_page_script($pagename);
@@ -24,10 +24,10 @@ function assemble_template($pagename)
   //     $pagename = "status404";
   //   }
 
-  // include "$theme_dir/pages/partials/header.php";
-  // include "$theme_dir/pages/partials/nav.php";
-  // include "$theme_dir/pages/$pagename.php";
-  // include "$theme_dir/pages/partials/footer.php";
+  include "$theme_dir/pages/partials/header.php";
+  include "$theme_dir/pages/partials/nav.php";
+  include "$theme_dir/pages/$pagename.php";
+  include "$theme_dir/pages/partials/footer.php";
 
   // get_header();
   // get_template_part('template-parts/nav');

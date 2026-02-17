@@ -34,6 +34,14 @@
     }
   }
 
+  &__brand > img{
+    max-width: 15.4rem;
+    
+    @media (min-width: 768px) {
+      max-width: 18.4rem;
+    }
+  }
+
   &__column-title{
     font-family: $font-inter;
     margin-bottom: 2.4rem;
@@ -67,10 +75,6 @@
       color: color('primary');
     }
   }
-
-  // &__column-list-nav{
-    
-  // }
 
   &__column-list-item{
     font-size: 1.4rem;

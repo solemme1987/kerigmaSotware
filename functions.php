@@ -66,7 +66,7 @@ require 'inc/assemble.php';
 // require 'inc/emEvents.php';
 
 /** Enqueue scripts */
-// require 'inc/enqueue.php';
+require 'inc/enqueue.php';
 
 /** Footnotes */
 // require 'inc/footnotes.php';
@@ -78,7 +78,7 @@ require 'inc/assemble.php';
 require 'inc/init.php';
 
 /** Utils */
-// require 'inc/utils.php';
+require 'inc/utils.php';
 
 /** Modify WP defaults */
 // require 'inc/modify.php';

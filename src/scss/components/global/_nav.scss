@@ -6,37 +6,11 @@
   height:8rem;
   
   &__brand{
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  &__text{
-    font-family: $font-montserrat;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.8rem;
-    text-transform: capitalize;
-    color: color(primary);
-  }
-  &__text-light{
-    font-weight: 300;
-  }
-
-  &__icon{
-    font-family: $font-montserrat;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 3.2rem;
-    color: color(full-white);
-    background-color: color(primary);
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.8rem;
-    text-transform: uppercase;
+    
+    max-width: 15.4rem;
+    @media (min-width: 768px) {
+      max-width: 18.4rem;
+    }
   }
 
   &__list-container{
@@ -130,6 +104,5 @@
     font-size: 3rem;
     color: color(text-primary);
   }
-
 
 }
