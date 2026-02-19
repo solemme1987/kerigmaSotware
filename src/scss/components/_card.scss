@@ -21,13 +21,29 @@
     width: 100%;
     padding: 3.2rem;
     border-radius: 2.4rem;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+
 
     &>.c-card__text{
       margin-bottom: 2.4rem;
     }
+
     &>.c-card__title{
       margin-bottom: 1.6rem;
       margin-top: 2.4rem;
+    }
+
+    & > .c-link {
+      margin-top: auto;
+      &:focus, &:hover {
+        color: color(secondary);
+      }
+    }
+
+    & > .c-link >span{
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-left: 0.4rem;
     }
    
     @media (min-width: 1024px) {
@@ -79,7 +95,6 @@
 
   &__text{
     font-size: 1.6rem;
-    // text-transform: capitalize;
     line-height: 1.6;
 
     &--sm{
@@ -134,25 +149,6 @@
     &:last-child{
       margin-bottom: 0;
     }
-  }
-
-  &__cta{
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: color(primary);
-    display: flex;
-    align-items: center;
-    transition: 0.2s ease-in-out;
-
-    &>span{
-      margin-left: 0.4rem;
-      font-size: 1.4rem;
-      font-weight: 0;
-    }
-
-    &:hover, &:focus{
-      color: color(secondary);
-    } 
   }
 
   &__background-circle{

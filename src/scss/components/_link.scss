@@ -1,16 +1,16 @@
 @use '../abstracts/globals' as *;
 
 .c-link {
+  font-size: 1.6rem;
   font-weight: 700;
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: .2s ease-in-out;
+  border-radius: 1.6rem;
 
   &--orange{
     background-color: color(secondary);
     color: color(surface-light);
-    border-radius: 99.99rem;
     padding: 2rem  4rem;
     box-shadow: 
       0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -26,7 +26,7 @@
   &--light{
     color: color(surface-light);;
     border: 2px solid color(surface-light);
-    border-radius: 99.99rem;
+    // border-radius: 99.99rem;
     padding: 2rem  4rem;
     &:hover, 
     &:focus{
@@ -34,5 +34,29 @@
       background-color: color(surface-light);
     }
   }
+
+  &--no-bg{
+    font-weight: 600;
+    align-items:center ;
+    color: color(primary);
+    
+    &>span{
+      font-size: 2.4rem;
+      margin-left: 0.4ren;
+      transition: .3s ease-in-out;
+      display: inline-block;
+    }
+    
+    &:hover,
+    &:focus{
+      color: color(primary-dark);
+    }
+    &:hover > span,
+    &:focus > span {
+      transform: translateX(1rem);
+    }
+
+  }
+
 
 }

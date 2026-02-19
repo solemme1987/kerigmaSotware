@@ -3,4 +3,122 @@
 
 .c-styleguide {
 
+  &.o-container--homeHero{
+    padding-bottom: 4.6rem;
+  }
+
+  &__row{
+   position: relative;
+
+    &::before{
+      content: attr(data-text);
+      font-family: $font-montserrat;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: fit-content;
+      height: 3rem;
+      background-color: color(primary);
+      color: color(surface-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5.5rem;
+      transform: translate(1.6rem, -150%);
+      border-radius: 0.8rem;
+
+      @media (min-width: 768px) {
+        transform: translate(2.4rem, -150%);
+      }
+
+      @media (min-width: 992px) {
+        transform: translate(3.2rem, -180%);
+      }
+    }
+  }
+
+   &__colors-grid{
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1024px) {
+      gap:3.2rem;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+
+  &__color-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1.6rem;
+    padding-top: 1.5rem;
+    border: 0.1rem solid color(text-dark);
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+
+    &>h2{
+      font-family: $font-inter;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+     &>p{
+       margin-bottom: 0.8rem;
+     }
+
+    &>.c-styleguide__color{
+      padding: 6rem;
+      width: 100%;
+    }
+
+  }
+
+  &__btn-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+
+     @media (min-width: 576px) {
+      flex-direction: row;
+      gap: 2.4rem;
+    }
+
+     @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3.2rem;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3.2rem;
+    }
+
+    &--dark {
+      padding: 2rem;
+      border-radius: 1.6rem;
+    }
+  }
+
+  &__card-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+     @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+
 }

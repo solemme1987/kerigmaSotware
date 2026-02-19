@@ -15,7 +15,7 @@
   &--light, 
   &--small{
     border: 0.1rem solid color(text-dark);
-    background-color: color(full-white);
+    background-color: color(surface-light);
     &:hover, &:focus {
       background-color: color(background-light);
     }
@@ -36,7 +36,7 @@
   &--small, 
   &--small-primary { 
     padding: 1rem 2rem;
-    border-radius: 4rem;
+    border-radius: 0.8rem;
   }
 
   

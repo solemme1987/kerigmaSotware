@@ -7,6 +7,7 @@
     </div>
 
     <div class="c-services__card-group">
+
       <article class="c-card c-card--service u-bg-background-light is-purple">
 
         <div class="c-card__background-circle u-bg-primary" aria-label="background circle"></div>
@@ -38,7 +39,7 @@
           </li>
         </ul>
 
-        <a class=" c-card__cta" href="#">
+        <a class=" c-link c-link--no-bg " href="#">
           Saber más
           <span class="material-icons-round ml-1 text-sm">arrow_forward</span>
         </a>
@@ -76,7 +77,7 @@
           </li>
         </ul>
 
-        <a class=" c-card__cta" href="#">
+        <a class=" c-link c-link--no-bg" href="#">
           Saber más
           <span class="material-icons-round ml-1 text-sm">arrow_forward</span>
         </a>
@@ -114,7 +115,7 @@
           </li>
         </ul>
 
-        <a class=" c-card__cta" href="#">
+        <a class="c-link c-link--no-bg" href="#">
           Saber más
           <span class="material-icons-round ml-1 text-sm">arrow_forward</span>
         </a>
