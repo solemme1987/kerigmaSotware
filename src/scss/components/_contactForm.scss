@@ -1,0 +1,255 @@
+@use '../abstracts/globals' as *;
+
+.c-contact{
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  &__heading{
+    font-family: $font-inter;
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+
+    &::first-letter{
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 4.8rem;
+      line-height: 1;
+      max-width: 70.8rem;
+    }
+  }
+
+  &__text{
+    font-size: 1.8rem;
+    color: color(text-primary);
+    line-height: 2.8rem;
+    max-width: 76.8rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__form {
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    background-color: color(surface-light);
+    padding: 4rem;
+    border-radius: 2.4rem;
+    box-shadow: 
+      0 2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.1),
+      0 0.8rem 0.1rem -0.6rem rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 1024px) {
+       min-width: 68.9rem;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(30%, -30%);
+      transition: 0.2s ease-in-out;
+      background-color: color(primary-md);
+      opacity: 0.2;
+    }
+
+    &:hover::after{
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+
+  &__form-title{
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+
+  &__policy-link{
+    color: color(primary);
+    font-weight: 500;
+    margin-left: 0.2rem;
+    transition: 0.2s ease-in-out;
+    text-transform: none;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: color(primary-dark);
+    }
+  }
+
+  &__card-group{
+    gap: 3.2rem;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+   
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+  }
+
+  &__card {
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.4rem;
+    transition: 0.2s ease-in-out;
+
+    &--border{
+      border: 1px solid color(text-dark);
+      &>.c-link{
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      &>.c-link>span{
+        font-size: 1.6rem;
+        margin-left: 0.4rem;
+      }
+
+      &:hover{
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    &.has-circle::after{
+      content: "";
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(30%, -30%);
+      transition: 0.2s ease-in-out;
+      background-color: color(secondary);
+      opacity: 0.2;
+    }
+
+    &:hover::after{
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+
+  &__card-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__card-text{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  &__icon-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    margin-top: 1.4rem;
+  }
+
+  &__icon{
+    font-size: 2.4rem;
+    line-height: 1;
+    padding: 1.2rem;
+    border: 0.1rem solid rgb(color(surface-light),0.2);
+    border-radius: 1.6rem;
+    background-color: rgb(color(surface-light),0.1);
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+      background-color: color(surface-light);
+      color: color(primary);
+    }
+  }
+  
+  &__info{
+    display: flex;
+    align-items:flex-start;
+    gap: 1.6rem;
+    
+    &:nth-of-type(2){
+      margin: 1.6rem 0;
+      &>.c-contact__icon{
+        color: color(secondary);
+        background-color: rgb(color(secondary), 0.1);
+      }
+    }
+
+    &>.c-contact__icon{
+      border-radius: 0.8rem;
+      color: color(primary);
+      background-color: rgb(color(primary), 0.1);
+      padding: 1rem;
+    }
+
+  }
+
+  &__info-data{
+
+    &>p{
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-weight: 500;
+      color: color(text-secondary);
+      text-transform: capitalize;
+    }
+    
+    &>a{
+      font-size: 1.8rem;
+      line-height: 2.8re,;
+      font-weight: 600;
+      color: color(dark);
+      transition: 0.2s ease-in-out;
+
+      &:hover, &:focus{
+        color: color(secondary);
+      }
+    }
+    &>h2{
+      font-size: 1.8rem;
+      line-height: 2.8re,;
+      font-weight: 600;
+      color: color(dark);
+      transition: 0.2s ease-in-out;
+      font-family: $font-inter;
+      
+    }
+  }
+
+}

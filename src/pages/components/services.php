@@ -10,7 +10,7 @@
 
       <article class="c-card c-card--service u-bg-background-light is-purple">
 
-        <div class="c-card__background-circle u-bg-primary" aria-label="background circle"></div>
+        <div class="c-card__background-circle u-bg-primary" aria-hidden="true"></div>
 
         <div class="c-card__box-icon c-card__box-icon--lg">
           <span class="material-icons-round u-color-primary">person_add</span>
@@ -48,7 +48,7 @@
 
       <article class="c-card c-card--service u-bg-background-light is-orange">
 
-        <div class="c-card__background-circle u-bg-secondary" aria-label="background circle"></div>
+        <div class="c-card__background-circle u-bg-secondary" aria-hidden="true"></div>
 
         <div class="c-card__box-icon c-card__box-icon--lg">
           <span class="material-icons-round u-color-secondary">groups</span>
@@ -86,7 +86,7 @@
 
       <article class="c-card c-card--service u-bg-background-light is-blue">
 
-        <div class="c-card__background-circle u-bg-blue-surface" aria-label="background circle"></div>
+        <div class="c-card__background-circle u-bg-blue-surface" aria-hidden="true"></div>
 
         <div class="c-card__box-icon c-card__box-icon--lg">
           <span class="material-icons-round u-color-blue-surface">rocket_launch</span>

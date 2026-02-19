@@ -249,7 +249,7 @@
 </section>
 
 
-<!-- POST CARDS -->
+<!-- FORMULARIOS-->
 <section class="c-styleguide o-container  o-container--styleguide ">
   <div class="o-row c-styleguide__row" data-text="# FORMULARIOS - INPUTS">
 

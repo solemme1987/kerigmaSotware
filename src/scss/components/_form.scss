@@ -55,10 +55,10 @@
     text-transform: capitalize;
   }
 
-  &__input,
+  &__input:not([type="checkbox"]),
   &__select,
   &__textarea{
-    background-color: transparent;
+    background-color: white;
     font-size: 1.4rem;
     line-height: 2rem;
     width: 100%;

@@ -14,7 +14,7 @@
 
   &__heading{
     font-family: $font-inter;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
     line-height: 4rem;
@@ -22,6 +22,11 @@
     &::first-letter{
       text-transform: uppercase;
     }
+
+    @media (min-width: 1024px) {
+      font-size: 3.6rem;
+    }
+
   }
 
   &__text{

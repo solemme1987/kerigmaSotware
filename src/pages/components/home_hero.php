@@ -3,7 +3,7 @@
 
     <div class="c-homeHero__text-container">
 
-      <span class="c-homeHero__pill">aliados tecnológicos</span>
+      <span class="c-pill u-bg-accent-purple-light u-color-primary">aliados tecnológicos</span>
 
       <h1 class="c-homeHero__title">
         Creamos vínculos para <span class="u-color-primary">potenciar</span> tu negocio
