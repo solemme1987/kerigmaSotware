@@ -9,7 +9,6 @@
       <p class="c-contact__text">Estamos listos para escuchar tus ideas y transformar tus desafíos en soluciones digitales efectivas.</p>
     </div>
 
-
     <div class="c-contact__wrapper">
 
       <div class="c-contact__form">

@@ -89,6 +89,10 @@ require 'inc/utils.php';
 /** WPML functions */
 // require 'inc/wpml.php';
 
+// Custom Nav Walker
+require   get_template_directory() . '/inc/class-custom-nav-walker.php';
+
+
 /*
 |--------------------------------------------------------------------
 | Do not write to this file. Use /inc/custom.php to add custom functions
